@@ -1,0 +1,32 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.Menu_Déroulant 
+{
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+}
+.Image_Exploitable 
+{
+width: 50px;
+height: 1px;
+margin-right: 10px;
+}
+h1 {
+    color: #ffffff;
+    font-family: fantasy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    width:  50px;
+    height: auto;
+    grid-column: initial;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
