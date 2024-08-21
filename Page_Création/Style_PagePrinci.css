@@ -1,8 +1,40 @@
 body {
     background-color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
+
+  .image_redimensionnee_logo {
+      
+      position: absolute;
+      top:35px;
+      width:auto; 
+      height: 60px; 
+      left: 400px;
+      
+  }
+  .image_redimensionnee_connexion{
+    position: absolute;
+    width: auto;
+    top:40px;
+    height: 45px;
+    right: 10px; 
+
+  }
+  /* En haut c'est la partie du menu à l'entrée  */
+  .Link_Start_Nettoyage
+  {
+    color: #ffffff;
+    position: absolute;
+    top: auto; 
+    right: 300px; 
+  }
+.Link_Start_Connexion{
+    color: #ffffff;
+    position: absolute;
+    top: auto; 
+    right: 100px; 
+}
 .Menu_Déroulant 
 {
     display: flex;
@@ -18,8 +50,8 @@ margin-right: 10px;
 h1 {
     color: #ffffff;
     font-family: fantasy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    width:  50px;
-    height: auto;
+    width:  100%;
+    height: 80px;
     grid-column: initial;
     background-color: rgb(0, 0, 0);
     text-align: center;
