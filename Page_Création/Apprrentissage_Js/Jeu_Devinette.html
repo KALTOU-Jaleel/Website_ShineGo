@@ -20,12 +20,150 @@
 </h1>
 
 <p> Devinez le nombre se situant entre 1 et 100 en moins de 10 tours.
-</br>Essayer de réussir  </p>
-<input type="text" id="NombreVerified">
-<input type="button" id="Checkedboutton">
+</br>Essayer de réussir à deviner le nombre générer de façon ramdom grace à notre algorithme </p>
+
+<input type="text" id="NombreVerified" class="NombreVerified">
+<input type="submit" id="Checkedboutton" class="Checkedboutton">
+
+<div class="resultPara">
+<p class="Votre_Reponse" id="Votre_Reponse">  </p>
+<p class="Vrai_Faux" id="Vrai_Faux">  </p>
+<p class="Haut_Bas" id="Haut_Bas"> </p>
+</div>
+
+<script >
+    
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+let NombreAVerifier = document.querySelector(".NombreVerified");
+let Submission = document.querySelector(".Checkedboutton");
+
+let MaReponse = document.querySelector(".Votre_Reponse");
+let Verification = document.querySelector(".Vrai_Faux");
+let Hi_LOOw = document.querySelector(".Haut_Bas")
+
+let guessCount = 1;
+let resetButton;
+
+/*function GuessChecked (Nombre, LaReponse)
+{
+let Valeur;
+if (Nombre === LaReponse)
+{
+    Valeur = true;
+}
+else
+{
+    Valeur = false;
+}
+    return Valeur;
+}
+*/
+
+/*function JeuTerminé(Nombre, LaReponse, Count)
+{
+let JEuTerminé; 
+if (Count === 10)
+{
+    JEuTerminé = true;
+}
+else if (GuessChecked(Nombre, LaReponse))
+{
+    JEuTerminé = true;
+}
+else{
+    JEuTerminé = false;
+}
+return JEuTerminé;
+
+}
+*/
 
 
-<script src="Script.js" defer> </script>
+
+
+
+function Devinette()
+{
+    let NombreUtili = Number(NombreAVerifier.value);
+    if (guessCount === 1)
+    {
+MaReponse.textContent= "Réponse précédente "
+    }
+    MaReponse.textContent += NombreUtili + " "
+    if (/*JeuTerminé(randomNumber,NombreUtili, guessCount ) === false */ guessCount !== 10)
+    {
+
+if (/*(GuessChecked(randomNumber, NombreUtili)) === false */ NombreUtili !== randomNumber )
+{
+    if (NombreUtili < randomNumber){
+        Hi_LOOw.style.backgroundColor = "Blue ";
+Hi_LOOw.innerHTML += "Le nombre entré est inférieur à la solution attendue <br>";}
+
+else if (NombreUtili > randomNumber){
+    Hi_LOOw.style.backgroundColor = "Blue ";
+    Hi_LOOw.innerHTML += "Le nombre entré est supérieur à la solution attendue <br>";}
+
+}
+else
+{
+    Hi_LOOw.style.backgroundColor = "Green ";
+    Hi_LOOw.innerHTML += "Le nombre entré est la bonne réponse <br>" ;
+    TermineJeu();
+}
+    }
+else
+{
+TermineJeu();
+}
+
+guessCount++;
+Verification.value= " ";
+Verification.focus();
+
+}
+
+
+
+Submission.addEventListener('click', Devinette);
+
+function TermineJeu ()
+{
+NombreAVerifier.disabled = true;
+Submission.disabled = true;
+resetButton = document.createElement("button");
+resetButton.textContent = "New game";
+
+document.body.appendChild(resetButton);
+resetButton.addEventListener("click", resetGame);
+}
+
+function resetGame()
+{
+guessCount = 1;
+
+let resetParamet = document.querySelectorAll(".resultPara p");
+for (let i =0 ; i< resetParamet; i++)
+{
+    resetParamet[i].textContent ="";
+}
+resetButton.parentNode.removeChild(resetButton);
+
+NombreAVerifier.disabled = false;
+Submission.disabled = false;
+
+MaReponse.textContent = "";
+Hi_LOOw.textContent = "";
+Verification.textContent = "";
+
+NombreAVerifier.value = "";
+
+NombreAVerifier.focus();
+
+
+randomNumber = Math.floor(Math.random() * 100) +1
+}
+ </script>
 </body>
 
 </html>
