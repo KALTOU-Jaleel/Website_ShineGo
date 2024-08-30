@@ -2,14 +2,16 @@
 <html lang="fr">
 
 <head>
-
+<div>
 <meta charset="UTF-8">
 <meta name="Auteur du document" content="KALTOU Jaleel">
-<meta name="Description" content=" Zone header de l'application web de nettoyagedes voitures">
+<meta name="Description" content="Site web de nettoyage de voiture pour le compte d'Aurguy : 
+il y aura plusieurs option de nettoyage. L emaintien de ce site web se fera en interne par des membres de 
+l'équipe GitHub">
+</div>
 
 <title> Application de gestion dynamique des commandes </title>
 <link rel="stylesheet" href="Style_PagePrinci.css">
-
 
 </head>
 
@@ -19,29 +21,121 @@
 <h1 class="Menu_Déroulant"> 
   <a href="Directed_Link.html#Ingrédients" target="_blank"> <img src="Logo de l'application.jpg" alt="Logo" class="image_redimensionnee_logo"> </a>
   <a href="PagePrinci.html" class="Link_Start_Nettoyage" > Nettoyage  </a>   
-  <a href="PagePrinci.html" class="Link_Start_Connexion"> Connexion </a> 
+  <a href="PagePrinci.html" class="Link_Start_Connexion"> Connexion </a>
+  <a href="PagePrinci.html" class="Link_Start_aboutUs" > About us </a>
+  
+    
+<select id="Langue" name="Langue" class="Langue">
+  <Label class="LabelLangue"> Langue </Label>
+  <option value="Anglais"> Anglais </option>
+  <option value="Français">Français</option>
+</select>
+
+<form>
+  <input type="search" name="q" placeholder="Search query" class="research">
+  <input type="submit" value="Go!" class="soumissionHaut">
+</form>
+
+
+ 
   <a href="PagePrinci.html" target="_blank">   <img src="Logo de connexion.jpg" alt="Connexion" class="image_redimensionnee_connexion"> </a>
  
-     </h1>
+</h1>
 
+<section class="a-propos">
+  <h2>À propos de nous</h2>
+  <p>Bienvenue chez <strong>[Nom de votre entreprise]</strong>, votre spécialiste de confiance pour l'entretien automobile. Depuis notre création, nous nous engageons à offrir des services de nettoyage de voiture de qualité supérieure, adaptés à vos besoins et à votre style de vie.</p>
+  <p>Nous savons combien il est important de rouler dans un véhicule propre et bien entretenu. C’est pourquoi notre équipe de professionnels qualifiés utilise des produits écologiques et des techniques innovantes pour redonner à votre voiture son éclat d'origine.</p>
+  <p>Qu'il s'agisse d'un lavage extérieur complet, d'un nettoyage intérieur minutieux, ou de traitements spécialisés pour protéger et embellir votre voiture, nous sommes là pour vous garantir une satisfaction totale.</p>
+  <p>Nous croyons en l'importance d'un service personnalisé, et nous nous efforçons de dépasser vos attentes à chaque visite. Faites-nous confiance pour prendre soin de votre véhicule avec le plus grand soin et professionnalisme.</p>
+  <p>Merci de choisir <strong>[Nom de votre entreprise]</strong> pour votre nettoyage automobile. Votre satisfaction est notre priorité !</p>
+</section>
 
+<h2> 
+<div class="optionPossible">
 
-<p> Nom d'utilisateur  <input  type="text"></p>
-<p> Numéro de téléphone  <input  type="number"></p>
-<p> Numéro de plaque d'imatriculation  <input  type="number"></p>
+  <p class="titleService"> </p>
+  <script src="elementChoix.js" async> </script>
 
+  <ul>
+    <li>1. Lavage Extérieur Complet
+        <ul>
+            <li>Lavage à haute pression</li>
+            <li>Shampooing de carrosserie</li>
+            <li>Séchage à la main</li>
+        </ul>
+    </li>
+
+    <li><strong>2. Nettoyage Intérieur Basique</strong>
+        <ul>
+            <li>Aspiration des tapis et sièges</li>
+            <li>Nettoyage des vitres intérieures</li>
+            <li>Dépoussiérage du tableau de bord</li>
+        </ul>
+    </li>
+
+    <li><strong>3. Nettoyage Intérieur Approfondi</strong>
+        <ul>
+            <li>Shampooing des tapis et sièges</li>
+            <li>Nettoyage des compartiments de rangement</li>
+            <li>Traitement antibactérien des surfaces</li>
+        </ul>
+    </li>
+
+    <li><strong>4. Traitements Spécialisés</strong>
+        <ul>
+            <li>Traitement anti-odeur</li>
+            <li>Traitement des cuirs et tissus</li>
+            <li>Protection UV des surfaces plastiques</li>
+        </ul>
+    </li>
+
+    <li><strong>5. Décontamination et Désoxydation</strong>
+        <ul>
+            <li>Polissage de la carrosserie</li>
+            <li>Traitement anti-rouille</li>
+            <li>Application de cire ou de scellant de peinture</li>
+        </ul>
+    </li>
+
+    <li><strong>6. Détail de Luxe</strong>
+        <ul>
+            <li>Lavage moteur</li>
+            <li>Rénovation des phares</li>
+            <li>Application de nano-protection céramique</li>
+        </ul>
+    </li>
+
+    <li><strong>7. Entretien des Jantes et Pneus</strong>
+        <ul>
+            <li>Nettoyage des jantes</li>
+            <li>Traitement de brillance des pneus</li>
+            <li>Élimination de la poussière de frein</li>
+        </ul>
+    </li>
+
+    <li><strong>8. Services Personnalisés</strong>
+        <ul>
+            <li>Nettoyage à la vapeur</li>
+            <li>Nettoyage à domicile</li>
+            <li>Forfaits mensuels de nettoyage</li>
+        </ul>
+    </li>
+</ul>
+
+</div>
 <p> <input type="date"></p>
 
-  
+</h2> 
 
 <!-- Comment rajouter des notes c'est incroyable -->
 
+<!-- 
 <aside>
   <a href="PagePrinci.html" target="_blank">
   <img src="Voiture Rouge jet.jpg" >
 </a>
   
-
 <a
   href="PagePrinci.html" target="_blank">
   <img src="Voiture Intérieur.jpg" >
@@ -53,13 +147,38 @@
 </a>
 
 </aside>
+
+-->
+
 <!--     Ici il s'agit d'un exemple de structuration du texte en html-->
+
+<aside>
+  <div class="listeServiceOffert">
+  <h2>Service offert </h2>
+
+  <ul>
+    <li><a href="#"> Lavage Extérieur Complet </a></li>
+    <li><a href="#">Nettoyage Intérieur Basique</a></li>
+    <li><a href="#">Nettoyage Intérieur Approfondi</a></li>
+    <li><a href="#">Traitements Spécialisés</a></li>
+    <li><a href="#">Décontamination et Désoxydation</a></li>
+    <li><a href="#">Détail de Luxe</a></li>
+    <li><a href="#">Entretien des Jantes et Pneu</a></li>
+    <li><a href="#">Services Personnalisés</a></li>
+
+  </ul>
+</div>
+</aside>
 
 <footer>
 <p> <a href="#"> Instagram </a></p>
-<p>  <a> Contactez nous</a></p>
+<p>  <a> Contactez nous</a> </p>
+<p> <a> Carrière </a> </p>
+
+<p>©Copyright 2024 by Jaleel. All rights reversed.</p>
 
 </footer>
+
 
 <script src="Connexion_Script.js" defer> </script>
 <script src="imageGestionnaire.js" defer> </script>

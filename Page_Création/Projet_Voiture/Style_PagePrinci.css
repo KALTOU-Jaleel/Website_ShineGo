@@ -1,60 +1,175 @@
 body {
     background-color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
+
+    margin: 0;
+    padding-top: 80px;
+    padding: 0;
+
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Ici je définit le style des éléments de mon haut de page 
+--- Ceci concerne uniquement les éléments images */
 
   .image_redimensionnee_logo {
       
       position: absolute;
-      top:35px;
+      top: 10px;
       width:auto; 
-      height: 60px; 
-      left: 400px;
+      height: 50px; 
+      left: 280px;
+      text-align: center;
       
   }
   .image_redimensionnee_connexion{
     position: absolute;
     width: auto;
-    top:40px;
-    height: 45px;
-    right: 30px; 
+    top:15px;
+    height: 40px;
+    right: 10px; 
+    
 
   }
-  /* En haut c'est la partie du menu à l'entrée  */
+
+  /* Ici c'est la fin des éléments images se trouvant 
+  sur la haut de la page */
+
+  /* Ici il s'agit de gérer des différents styles des carartères sur 
+  le haut du site web
+  */
   .Link_Start_Nettoyage
   {
     color: #ffffff;
     position: absolute;
+    font-size: 20px;
     top: auto; 
-    right: 370px; 
+    left: 60%; 
+    
   }
+
 .Link_Start_Connexion{
     color: #ffffff;
     position: absolute;
+    font-size: 20px;
     top: auto; 
-    right: 150px; 
+    left: 88%; 
 }
+
+.Link_Start_aboutUs
+{
+  color: #ffffff;
+  position: absolute;
+  font-size: 20px;
+  top: auto; 
+  right: 50%;
+}
+.Langue
+{
+  background-color: rgb(221, 47, 47);
+  color: #ffffff;
+position: absolute;
+left: 75%;
+font-size: 20px;
+  top: auto;
+}
+.soumissionHaut
+{
+  background-color: rgb(255, 255, 255);
+  color: #ffffff;
+position: absolute;
+left: 17%;
+font-size: 20px;
+background: #333;
+border: 0;
+top: 40%;
+color: white;
+}
+.research {
+
+  color: #000000;
+  position: absolute;
+  font-size: 15px;
+  top: 40%; 
+  left: 1%;
+
+
+}
+.LabelLangue
+{
+color: black;
+}
+
+.Link_Start_Connexion, .Link_Start_aboutUs, .Link_Start_Nettoyage, .Langue
+{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+/* Ici c'est la fin de la partie de gestion des différents styles des carartères sur 
+  le haut du site web */
+
+/* Liste déroulante sur la gauche de la page web */
+.listeServiceOffert
+{
+  width: 250px; /* Largeur du menu */
+  background-color: #f4f4f4; /* Couleur de fond du menu */
+  padding: 15px; /* Espacement interne du menu */
+  position: fixed; /* Fixe le menu sur le côté gauche */
+  top: 0; /* Positionne le menu en haut de l'écran */
+  right: 0; /* Positionne le menu à gauche de l'écran */
+  height: 100vh; /* Hauteur du menu pour qu'il occupe toute la hauteur de la vue */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.listeServiceOffert h2 {
+  font-size: 1.5em; /* Taille de la police pour le titre */
+  margin-bottom: 15px; /* Espace sous le titre */
+}
+
+.listeServiceOffert ul {
+  list-style-type: none; /* Supprime les puces de la liste */
+  padding: 0; /* Supprime les marges internes de la liste */
+}
+
+.listeServiceOffert ul li {
+  margin-bottom: 10px; /* Espace entre les éléments de la liste */
+}
+
+.listeServiceOffert ul li a {
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: #333; /* Couleur du texte des liens */
+  display: block; /* Assure que les liens occupent toute la largeur de l'élément de liste */
+  padding: 10px; /* Espacement interne pour les liens */
+  border-radius: 5px; /* Bords arrondis pour les liens */
+}
+
+.listeServiceOffert ul li a:hover {
+  background-color: #ddd; /* Couleur de fond au survol du lien */
+}
+/* Fin de la partie du menu déroulant sur la droite de la page web  */
 .Menu_Déroulant 
 {
     display: flex;
     align-items: center;
     font-size: 2em;
 }
-.Image_Exploitable 
-{
-width: 50px;
-height: 1px;
-margin-right: 10px;
-}
+
 h1 {
     color: #ffffff;
     font-family: fantasy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     width:  100%;
     height: 80px;
-    grid-column: initial;
     background-color: rgb(0, 0, 0);
+
+    top: 0;
+    margin-top: 0;
+
     text-align: center;
+    position: fixed;
+    z-index: 1000;
     
 }
 
@@ -62,6 +177,39 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
-a {
+aside {
+  flex: 1;
+  margin-right: 0px;
+  background-color: #9b9b9b;
+}
+a 
+{
   text-decoration: none;
 }
+aside li {
+  padding-bottom: 10px;
+}
+footer
+{
+background-color: rgb(190, 190, 190);
+margin: 0;
+margin-top: 10px;
+
+}
+
+.a-propos {
+  max-width: 800px; /* Limite la largeur du contenu principal pour une meilleure lisibilité */
+  margin: 7%; /* Centre le contenu principal */
+}
+
+.a-propos h2 {
+  font-size: 2em; /* Taille de la police pour le titre */
+  margin-bottom: 20px; /* Espace sous le titre */
+  left: 50%;
+}
+
+.a-propos p {
+  line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+  margin-bottom: 15px; /* Espace entre les paragraphes */
+}
+
