@@ -1,3 +1,10 @@
-let elementAffiche = document.querySelector(".titleService");
+class checkingEntrer
+{
+constructor(Enter){
+    this.Enter= Enter;
+}
 
-elementAffiche.textContent = "Service offert";
+verification (let ){
+
+}
+}

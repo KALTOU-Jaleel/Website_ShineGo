@@ -213,3 +213,11 @@ margin-top: 10px;
   margin-bottom: 15px; /* Espace entre les paragraphes */
 }
 
+.schedule {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.mesDroitsAuteurs
+{
+text-align: center;
+}
