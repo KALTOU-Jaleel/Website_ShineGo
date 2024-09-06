@@ -170,7 +170,8 @@ h1 {
     text-align: center;
     position: fixed;
     z-index: 1000;
-    
+
+    background: linear-gradient((rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Voiture_nettoyage.jpg'));
 }
 
 p {
@@ -220,4 +221,17 @@ margin-top: 10px;
 .mesDroitsAuteurs
 {
 text-align: center;
+}
+
+.header-background {
+  background-image: url('Voiture_nettoyage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixe l'image de fond */
+  height: 80vh; /* Prend toute la hauteur de la fenêtre */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Couleur du texte pour le rendre lisible */
+  text-align: center;
 }
