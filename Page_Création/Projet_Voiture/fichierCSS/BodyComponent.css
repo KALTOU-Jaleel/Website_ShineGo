@@ -1,0 +1,6 @@
+
+.grossePartieduBas {
+    position: relative;
+    margin-top: calc(100vh * 0.55); /* Décale le contenu principal pour prendre en compte la hauteur initiale du header */
+    transition: margin-top 0.3s ease; /* Ajoute une transition pour le défilement fluide */
+}

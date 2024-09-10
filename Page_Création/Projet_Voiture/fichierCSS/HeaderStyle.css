@@ -1,0 +1,109 @@
+/* Définition du style du header pour contenir le fond en image */
+header {
+    color: #000000;
+    font-family: 'Helvetica Neue', 'Futura', sans-serif;
+    width:  100%;
+    top: 0;
+    margin-top: 0;
+    background-color: #000000;
+    right: 0.2%;
+    left: 0.2%;
+
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+
+    border-radius: 10px;
+
+    height: 55%;
+    
+    background-image: url('../Images/Voiture_nettoyage.jpg');/* Image de fond */
+
+    background-size: cover; /* Pour s'assurer que l'image couvre tout l'arrière-plan */
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+
+    transition: background 0.5s ease, height 0.6s ease-in-out; 
+}
+
+.header-background-scrolled {
+    background-image: url('../Images/Voiture_nettoyage.jpg');
+      
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Ici je définit le style des éléments de mon haut de page 
+--- Ceci concerne uniquement les éléments images */
+
+
+/* Ici c'est la fin des éléments images se trouvant 
+sur la haut de la page */
+
+/* Ici il s'agit de gérer des différents styles des carartères sur 
+le haut du site web
+*/
+.Link_Start_Nettoyage
+{
+ position: absolute; 
+  left: 30%; 
+  
+}
+
+.Link_Start_Connexion{
+position: absolute;  
+  left: 90%; 
+}
+
+.Link_Start_aboutUs
+{
+position: absolute;
+left: 15%;
+}
+
+.langueChoisi
+{ 
+    position: absolute;
+    left: 80%;
+}
+    
+.Link_Start_Connexion, .Link_Start_aboutUs, .Link_Start_Nettoyage, .langueChoisi
+{
+    font-family: 'Helvetica Neue', 'Futura', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    position: absolute;
+  top: 15%; 
+}
+
+
+
+.research {
+
+color: #000000;
+position: fixed;
+font-size: 15px;
+top: 3.5%;
+left: 40%;
+font-family: 'Helvetica Neue', 'Futura', sans-serif;
+display: flex;
+
+border-radius: 15px; /* Définit l'arrondi des bords à 15 pixels */
+    padding: 10px; /* Ajoute de l'espace interne autour du texte */
+    border: 1px solid #ccc; /* Définit une bordure grise autour du champ */
+    width: 300px; /* Définit une largeur fixe */
+
+}
+
+
+
+a 
+{
+  text-decoration: none;
+}
+/* Ici c'est la fin de la partie de gestion des différents styles des carartères sur 
+le haut du site web */
+

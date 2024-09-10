@@ -13,103 +13,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
-/* Ici je définit le style des éléments de mon haut de page 
---- Ceci concerne uniquement les éléments images */
 
-  .image_redimensionnee_logo {
-      
-      position: absolute;
-      top: 10px;
-      width:auto; 
-      height: 50px; 
-      left: 280px;
-      text-align: center;
-      
-  }
-  .image_redimensionnee_connexion{
-    position: absolute;
-    width: auto;
-    top:15px;
-    height: 40px;
-    right: 10px; 
-    
-
-  }
-
-  /* Ici c'est la fin des éléments images se trouvant 
-  sur la haut de la page */
-
-  /* Ici il s'agit de gérer des différents styles des carartères sur 
-  le haut du site web
-  */
-  .Link_Start_Nettoyage
-  {
-    color: #ffffff;
-    position: absolute;
-    font-size: 20px;
-    top: auto; 
-    left: 60%; 
-    
-  }
-
-.Link_Start_Connexion{
-    color: #ffffff;
-    position: absolute;
-    font-size: 20px;
-    top: auto; 
-    left: 88%; 
-}
-
-.Link_Start_aboutUs
-{
-  color: #ffffff;
-  position: absolute;
-  font-size: 20px;
-  top: auto; 
-  right: 50%;
-}
-.Langue
-{
-  background-color: rgb(221, 47, 47);
-  color: #ffffff;
-position: absolute;
-left: 75%;
-font-size: 20px;
-  top: auto;
-}
-.soumissionHaut
-{
-  background-color: rgb(255, 255, 255);
-  color: #ffffff;
-position: absolute;
-left: 17%;
-font-size: 20px;
-background: #333;
-border: 0;
-top: 40%;
-color: white;
-}
-.research {
-
-  color: #000000;
-  position: absolute;
-  font-size: 15px;
-  top: 40%; 
-  left: 1%;
-
-
-}
-.LabelLangue
-{
-color: black;
-}
-
-.Link_Start_Connexion, .Link_Start_aboutUs, .Link_Start_Nettoyage, .Langue
-{
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-/* Ici c'est la fin de la partie de gestion des différents styles des carartères sur 
-  le haut du site web */
 
 /* Liste déroulante sur la gauche de la page web */
 .listeServiceOffert
@@ -150,14 +54,9 @@ color: black;
   background-color: #ddd; /* Couleur de fond au survol du lien */
 }
 /* Fin de la partie du menu déroulant sur la droite de la page web  */
-.Menu_Déroulant 
-{
-    display: flex;
-    align-items: center;
-    font-size: 2em;
-}
 
-h1 {
+
+/*h1 {
     color: #ffffff;
     font-family: fantasy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     width:  100%;
@@ -173,7 +72,7 @@ h1 {
 
     background: linear-gradient((rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Voiture_nettoyage.jpg'));
 }
-
+*/
 p {
     font-size: 16px;
     line-height: 1.5;
@@ -223,15 +122,4 @@ margin-top: 10px;
 text-align: center;
 }
 
-.header-background {
-  background-image: url('Voiture_nettoyage.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* Fixe l'image de fond */
-  height: 80vh; /* Prend toute la hauteur de la fenêtre */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white; /* Couleur du texte pour le rendre lisible */
-  text-align: center;
-}
+
