@@ -11,12 +11,12 @@ header {
 
     text-align: center;
     position: fixed;
-    z-index: 10;
+    z-index: 1000;
     display: flex;
 
     border-radius: 10px;
 
-    height: 55%;
+    height: 65%;
     
     background-image: url('../Images/Voiture_nettoyage.jpg');/* Image de fond */
 
@@ -36,6 +36,13 @@ header {
     background-position: center;
 }
 
+.Menu_Déroulant {
+  position: sticky;
+  top: 0; /* Collez le header au haut de la page */
+  width: 100%;
+  z-index: 1000; /* Assurez que le header reste au-dessus du contenu */
+  transition: height 0.3s ease, background-image 0.3s ease; /* Transition pour les changements de style */
+}
 /* Ici je définit le style des éléments de mon haut de page 
 --- Ceci concerne uniquement les éléments images */
 
@@ -78,7 +85,16 @@ left: 15%;
     position: absolute;
   top: 15%; 
 }
-
+.Link_Presentation 
+{
+  font-family: 'Helvetica Neue', 'Futura', sans-serif;
+  color: #ffffff;
+  font-size: 45px;
+  position: absolute;
+top: 40%; 
+    left: 10%;
+    font-weight: bold;
+}
 
 
 .research {

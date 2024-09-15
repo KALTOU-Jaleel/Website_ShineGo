@@ -1,34 +1,28 @@
-const listeHeader = ["Services","Connexion", "About us", "Contact" ];
-
-document.addEventListener('DOMContentLoaded', function() {
-    
 
     
-    const motNettoyage = document.querySelector(".Link_Start_Nettoyage");
-    const pNettoyage = document.createElement('p');
-    pNettoyage.textContent = "Services";
-    motNettoyage.appendChild(pNettoyage);
+    function ajouterTexte(elements) {
+        for (const [selector, text] of Object.entries(elements)) {
+            const element = document.querySelector(selector);
+            if (element) {
+                const p = document.createElement('p');
+                p.textContent = text;
+                element.appendChild(p);
+            }
+        }
+    }
+    
+    // Utilisation de la fonction avec un dictionnaire
+    const elementsAvecTextes = {
+        ".Link_Start_Nettoyage": "Services",
+        ".Link_Start_Connexion": "Connexion",
+        ".Link_Start_aboutUs": "About us"
+    };
+    
+    // Appel de la fonction avec l'objet contenant les sélecteurs et les textes
+    ajouterTexte(elementsAvecTextes);
+    
 
-    const motConnexion = document.querySelector(".Link_Start_Connexion");
-    const pConnexion = document.createElement('p');
-    pConnexion.textContent = "Connexion";
-    motConnexion.appendChild(pConnexion);
-
-    const motAboutUs = document.querySelector(".Link_Start_aboutUs");
-    const pAboutUs = document.createElement('p');
-    pAboutUs.textContent = "About us";
-    motAboutUs.appendChild(pAboutUs);
-
-const motContact = document.querySelector(".Link_Start_Contact");
-
-
-/*  const LogoApplication = document.querySelector(".imageLogoApplication");
-    const ImageLogo = document.createElement('img');
-    ImageLogo.src = "../Images/Logo de l'application.jpg";
-    ImageLogo.className = "image_redimensionnee_logo";
-    LogoApplication.appendChild(ImageLogo);
-*/
-
+    window.addEventListener('scroll', handleScroll);
     const LangueChoisi = document.querySelector(".langueChoisi");
 const pLangue = document.createElement("p");
 pLangue.textContent = "Fr";
@@ -42,6 +36,33 @@ LangueChoisi.addEventListener('click', function(event) {
     }
 });
 
+
+const motContact = document.querySelector(".Link_Start_Contact");
+
+
+const Presentation = document.querySelector(".Link_Presentation");
+const pPresentation = document.createElement('p');
+pPresentation.textContent = "Votre confort, notre combat ...";
+Presentation.appendChild(pPresentation);
+
+// Fonction pour afficher/masquer le texte en fonction du scroll
+function handleScroll() {
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+
+    // Si le scroll est entre 20 % et 75 % de la hauteur de l'écran
+    if (scrollPosition < windowHeight * 0.45) {
+        pPresentation.style.display = 'block';  // Affiche le texte
+    } else {
+        pPresentation.style.display = 'none';   // Cache le texte
+    }
+}
+
+// Écoute l'événement de scroll
+
+
+
+
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.Menu_Déroulant');
     const scrollY = window.scrollY; // Récupérer la position de défilement verticale
@@ -49,7 +70,7 @@ window.addEventListener('scroll', function() {
     const grossePartieduBas = document.querySelector('.grossePartieduBas');
 
     // Définir les hauteurs min et max
-    const minHeight = window.innerHeight*0.13; // Hauteur minimale du header
+    const minHeight = window.innerHeight*0.16; // Hauteur minimale du header
     const maxHeight = window.innerHeight*0.75; // Hauteur maximale du header
 
     // Calculer la nouvelle hauteur en fonction du défilement
@@ -60,11 +81,20 @@ window.addEventListener('scroll', function() {
     const opacity = Math.min(maxOpacity, scrollY / 500); // Ajuste le facteur d'opacité selon le défilement
 
     // Appliquer la nouvelle hauteur et le fond avec le dégradé
-    header.style.height = (newHeight-40) + 'px';
+    header.style.height = newHeight+ 'px';
     
     header.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, ${opacity}), rgba(0, 0, 0, ${opacity})), url('../Images/Voiture_nettoyage.jpg')`;
 
-    grossePartieduBas.style.marginTop = newHeight + 'px';
+    
+
+    // Gérer la classe pour le dégradé basé sur la position de défilement
+    if (newHeight <= 305) {
+        grossePartieduBas.style.opacity = '1'; // Afficher
+        grossePartieduBas.style.marginTop = newHeight + 'px'; // Garder une marge
+    } else {
+        grossePartieduBas.style.opacity = '0'; // Cacher
+        grossePartieduBas.style.marginTop = '0'; // Réinitialiser la marge
+    }
 
     // Gérer la classe pour le dégradé basé sur la position de défilement
     if (scrollY > 50) { 
@@ -74,7 +104,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-});
+
 
 
 

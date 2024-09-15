@@ -1,0 +1,49 @@
+footer {
+    background-color: #2c2c2c; /* Couleur de fond sombre */
+    color: #fff; /* Couleur du texte blanche */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    z-index: 1005;
+}
+
+footer .RéseauxSociaux, 
+footer .Autres {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les liens */
+    margin-bottom: 20px;
+}
+
+footer .RéseauxSociaux a, 
+footer .Autres a {
+    color: #fff; /* Couleur des liens */
+    text-decoration: none; /* Retirer le soulignement */
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease; /* Transition douce pour les couleurs */
+}
+
+footer .RéseauxSociaux a:hover, 
+footer .Autres a:hover {
+    color: #1e90ff; /* Changement de couleur au survol */
+}
+
+footer .mesDroitsAuteurs {
+    font-size: 14px;
+    color: #bbb; /* Couleur grise pour les droits d'auteur */
+    margin-top: 10px;
+}
+
+/* Media Queries pour la mise en page responsive */
+@media (max-width: 768px) {
+    footer .RéseauxSociaux, 
+    footer .Autres {
+        flex-direction: column; /* Empile les liens en colonne sur petit écran */
+    }
+    
+    footer .RéseauxSociaux a, 
+    footer .Autres a {
+        font-size: 16px; /* Réduire légèrement la taille du texte */
+    }
+}
