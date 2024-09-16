@@ -4,24 +4,48 @@ body
     z-index: 999;
   }
 
-
-
-
-.a-propos {
-  max-width: 800px; /* Limite la largeur du contenu principal pour une meilleure lisibilité */
-  margin: 7%; /* Centre le contenu principal */
+  .a-propos {
+    background-color: #f0f0f0; /* Fond gris clair */
+    padding: 40px; /* Espacement intérieur */
+    margin: 0 auto; /* Centre horizontalement */
+    max-width: 800px; /* Largeur maximale de la boîte */
+    border-radius: 10px; /* Coins arrondis pour un aspect plus doux */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère pour effet de profondeur */
+    text-align: center; /* Centre le texte */
 }
 
-.a-propos h2 {
-  font-size: 2em; /* Taille de la police pour le titre */
-  margin-bottom: 20px; /* Espace sous le titre */
-  left: 50%;
+.a-propos h1 {
+    font-size: 32px;
+    color: #333; /* Couleur du texte */
+    margin-bottom: 20px;
 }
 
 .a-propos p {
-  line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
-  margin-bottom: 15px; /* Espace entre les paragraphes */
+    font-size: 18px;
+    color: #555; /* Texte légèrement plus clair */
+    line-height: 1.6; /* Espace entre les lignes pour une meilleure lisibilité */
+    margin-bottom: 15px;
 }
+
+.a-propos strong {
+    color: #007bff; /* Met en évidence le nom de l'entreprise avec une couleur différente */
+}
+
+@media (max-width: 768px) {
+    .a-propos {
+        padding: 20px;
+        max-width: 95%; /* Réduit la largeur pour petits écrans */
+    }
+
+    .a-propos h1 {
+        font-size: 28px;
+    }
+
+    .a-propos p {
+        font-size: 16px;
+    }
+}
+
 
 .schedule {
   max-width: 800px;

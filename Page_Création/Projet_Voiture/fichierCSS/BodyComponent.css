@@ -6,56 +6,65 @@
     transition: opacity 0.5s ease, margin-top 0.5s ease; /* Ajoute une transition pour le défilement fluide */
 }
 
-.listeServiceOffert
-{
-  width: 250px; /* Largeur du menu */
-  background-color: #f4f4f4; /* Couleur de fond du menu */
-  padding: 15px; /* Espacement interne du menu */
-  position: fixed; /* Fixe le menu sur le côté gauche */
-  top: 0; /* Positionne le menu en haut de l'écran */
-  right: 0; /* Positionne le menu à gauche de l'écran */
-  height: 100vh; /* Hauteur du menu pour qu'il occupe toute la hauteur de la vue */
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+
+aside {
+    width: 100%; /* Prend toute la largeur */
+    background-color: #f8f8f8; /* Couleur de fond pour séparer du reste */
+    padding: 20px 0; /* Ajoute de l'espace au-dessus et en dessous */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Léger ombrage pour effet de profondeur */
+}
+
+.listeServiceOffert {
+    text-align: center; /* Centre tout le contenu */
 }
 
 .listeServiceOffert h2 {
-  font-size: 1.5em; /* Taille de la police pour le titre */
-  margin-bottom: 15px; /* Espace sous le titre */
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Couleur sombre pour le titre */
 }
 
 .listeServiceOffert ul {
-  list-style-type: none; /* Supprime les puces de la liste */
-  padding: 0; /* Supprime les marges internes de la liste */
+    list-style-type: none; /* Retire les puces */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Affichage en flex pour aligner les éléments horizontalement */
+    justify-content: center; /* Centre les éléments dans le conteneur */
+    gap: 20px; /* Espacement entre chaque élément */
+    flex-wrap: wrap; /* Permet de revenir à la ligne si trop d'éléments */
 }
 
 .listeServiceOffert ul li {
-  margin-bottom: 10px; /* Espace entre les éléments de la liste */
+    display: inline-block;
 }
 
 .listeServiceOffert ul li a {
-  text-decoration: none; /* Supprime le soulignement des liens */
-  color: #333; /* Couleur du texte des liens */
-  display: block; /* Assure que les liens occupent toute la largeur de l'élément de liste */
-  padding: 10px; /* Espacement interne pour les liens */
-  border-radius: 5px; /* Bords arrondis pour les liens */
+    display: block;
+    padding: 10px 15px; /* Espacement interne des liens */
+    background-color: #a50b0b; /* Couleur de fond des liens */
+    color: white; /* Texte en blanc */
+    text-decoration: none; /* Retire le soulignement */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Effet de transition pour le survol */
 }
 
 .listeServiceOffert ul li a:hover {
-  background-color: #ddd; /* Couleur de fond au survol du lien */
+    background-color: #0056b3; /* Couleur différente au survol */
 }
-/* Fin de la partie du menu déroulant sur la droite de la page web  */
+
+@media (max-width: 768px) {
+    .listeServiceOffert ul {
+        flex-direction: column; /* Sur les petits écrans, les éléments passent en colonne */
+    }
+
+    .listeServiceOffert ul li {
+        margin-bottom: 10px;
+    }
+}
 
 
-aside {
-    flex: 1;
-    margin-right: 0px;
-    background-color: #9b9b9b;
-  }
   a 
   {
     text-decoration: none;
   }
-  aside li {
-    padding-bottom: 10px;
-  }
-
+  

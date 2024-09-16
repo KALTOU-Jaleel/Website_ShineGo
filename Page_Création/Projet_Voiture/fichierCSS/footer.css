@@ -36,14 +36,18 @@ footer .mesDroitsAuteurs {
 }
 
 /* Media Queries pour la mise en page responsive */
+
+/*
 @media (max-width: 768px) {
     footer .RéseauxSociaux, 
     footer .Autres {
         flex-direction: column; /* Empile les liens en colonne sur petit écran */
+        /*
     }
     
     footer .RéseauxSociaux a, 
     footer .Autres a {
         font-size: 16px; /* Réduire légèrement la taille du texte */
+        /*
     }
 }
