@@ -1,13 +1,3 @@
-function ajouterTexte(elements) {
-    for (const [selector, text] of Object.entries(elements)) {
-        const element = document.querySelector(selector);
-        if (element) {
-            const p = document.createElement('p');
-            p.textContent = text;
-            element.appendChild(p);
-        }
-    }
-}
 
 // Utilisation de la fonction avec un dictionnaire
 const elementsAvecTextes2 = {

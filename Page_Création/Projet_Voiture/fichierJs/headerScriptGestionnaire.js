@@ -1,6 +1,4 @@
-
-    
-    function ajouterTexte(elements) {
+function ajouterTexte(elements) {
         for (const [selector, text] of Object.entries(elements)) {
             const element = document.querySelector(selector);
             if (element) {
@@ -17,6 +15,7 @@
         ".Link_Start_Connexion": "Connexion",
         ".Link_Start_aboutUs": "About us"
     };
+    
     
     // Appel de la fonction avec l'objet contenant les sélecteurs et les textes
     ajouterTexte(elementsAvecTextes);
