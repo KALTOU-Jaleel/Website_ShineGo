@@ -70,9 +70,11 @@ Pour un déploiement sur un serveur, utilisez des services comme **Netlify**, **
 
 ## Contributeurs
 
-Le développement et la conception de ce site web ont été réalisés par **Jaleel** et son équipe, avec un souci du détail pour offrir la meilleure expérience utilisateur possible. Toute contribution future est la bienvenue, que ce soit pour des suggestions d'améliorations, des rapports de bugs, ou des ajouts de fonctionnalités.
+Le développement et la conception de ce site web ont été réalisés par **Moi** , avec un souci du détail pour offrir la meilleure expérience utilisateur possible. Toute contribution future est la bienvenue, que ce soit pour des suggestions d'améliorations, des rapports de bugs, ou des ajouts de fonctionnalités.
 
 ## Remarques Finales
 
 Le site **Votre Confort, Notre Combat** est conçu pour évoluer. À l’avenir, nous envisageons d’ajouter des fonctionnalités comme la gestion de comptes utilisateurs, l’intégration d’un système de paiement en ligne pour les réservations, et des outils interactifs pour les utilisateurs. Ce projet se veut en constante amélioration, aligné avec notre objectif principal : offrir un confort optimal à nos clients à travers des services de nettoyage de qualité supérieure.
 
+- ## PS ##
+Les différentes redirections sont en cours de maintenace actually
