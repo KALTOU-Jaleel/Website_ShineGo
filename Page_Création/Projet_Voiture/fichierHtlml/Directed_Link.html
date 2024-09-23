@@ -9,6 +9,7 @@
 
 <title> Application de gestion dynamique des commandes </title>
 
+<link rel="stylesheet" href="../fichierCSS/ConnexionPopup.css">
 
 
 </head>
@@ -16,42 +17,27 @@
 
 <body>
 
-    <h1>Recette rapide de l'houmous</h1>
+    <!-- Bouton pour ouvrir la fenêtre pop-up -->
+    <button id="openPopupBtn">Se connecter</button>
 
-<p>Cette recette permet d'obtenir rapidement un houmous savoureux, sans complications. C'est une adaptation de plusieurs recettes différentes que j'ai essayées au fil des ans.</p>
+    <!-- Fenêtre pop-up de connexion -->
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopupBtn">&times;</span>
+            <h2>Connexion</h2>
+            <form>
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" required>
 
-<p>L'houmous est une délicieuse pâte épaisse utilisée dans les plats en Grèce et au moyen-orient. Il s'accorde très bien avec la salade, les viandes grillées et du pain calabrais.</p>
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required>
 
-<h2 id="Ingrédients">Ingrédients</h2>
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+    </div>
 
-<ul>
-<li>1 boîte (400 g) de pois chiches (garbanzos)</li>
-<li>175g de crème de sésame</li>
-<li>6 tomates séchées</li>
-<li>un demi poivron rouge</li>
-<li>une pincée de piment de Cayenne</li>
-<li>1 gousse d'ail</li>
-<li>un trait d'huile d'olive</li>
-</ul>
-
-<h2>Instructions</h2>
-
-<ol>
-<li>Ôter la peau de l'ail et le hacher grossièrement.</li>
-<li>Enlever les graines et la tige du poivron, le hacher grossièrement.</li>
-<li>Mettre tous les ingrédients dans un robot mixer jusqu'à l'obtention d'une pâte.</li>
-<li>Si vous voulez un houmous grenu, ne le mixez pas trop longtemps.</li>
-<li>Si vous voulez un houmous lisse, mixez-le plus longtemps.</li>
-</ol>
-
-<p>Pour des saveurs différentes, vous pouvez essayer d'y mettre un peu de jus de citron et de coriandre, du tabasco, de la limette et du chipotle, de la harissa et de la menthe ou des épinards et de la feta. Essayez et voyez ce qui vous va.</p>
-
-<h2>Conservation</h2>
-
-<p>Mettez l'houmous fini au réfrigérateur dans un récipient fermé. Vous le garderez ainsi pendant environ une semaine. S'il se met à fermenter, jettez‑le sans hésiter.</p>
-
-<p>L'houmous peut être congelé ; consommez‑le dans les deux mois qui suivent sa congélation.</p>
-
+    <script src="../fichierJs/Connexion_Script.js"></script>
 </body>
 
 </html>
