@@ -1,22 +1,16 @@
-// Récupère les éléments de la page
-const openPopupBtn = document.getElementById('openPopupBtn');
-const closePopupBtn = document.getElementById('closePopupBtn');
-const popup = document.getElementById('popup');
+// Validation du formulaire de connexion
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
-// Ouvre la fenêtre pop-up
-openPopupBtn.addEventListener('click', () => {
-    popup.style.display = 'flex';
-});
-
-// Ferme la fenêtre pop-up
-closePopupBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
-});
-
-// Ferme la fenêtre pop-up si on clique en dehors du contenu
-window.addEventListener('click', (event) => {
-    if (event.target === popup) {
-        popup.style.display = 'none';
+    // Validation basique pour s'assurer que les champs ne sont pas vides
+    if (!username || !password) {
+        alert("Veuillez remplir tous les champs.");
+        event.preventDefault(); // Empêche l'envoi du formulaire si les champs sont vides
+    } else {
+        // Tu peux ajouter des validations supplémentaires ici
+        console.log("Formulaire valide. Envoi des données...");
     }
 });
+
 
