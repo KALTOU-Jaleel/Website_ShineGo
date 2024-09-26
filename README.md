@@ -20,7 +20,7 @@ L'interface est conçue pour être accessible à tous types de visiteurs. Elle i
 
 - Un menu déroulant avec des liens rapides vers les sections importantes du site telles que les services, la connexion client, et la présentation de l'entreprise.
 - Une mise en page responsive qui s'adapte aux écrans de différentes tailles, garantissant une expérience utilisateur optimale, que ce soit sur mobile, tablette ou ordinateur de bureau.
-
+![Connexion images](./Page_Création/Projet_Voiture/Readme_images/Connexion%20images.png)
 ### 3. Changement de Langue
 
 Le site offre un système de basculement linguistique entre le **français** et l'**anglais**, accessible via un simple bouton. Cette fonctionnalité permet aux utilisateurs de choisir la langue qui leur convient le mieux.
