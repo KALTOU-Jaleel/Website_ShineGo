@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<div>
+<meta charset="UTF-8">
+<meta name="Auteur du document" content="KALTOU Jaleel">
+<meta name="Description" content="Site web de nettoyage de voiture pour le compte d'Aurguy : 
+il y aura plusieurs option de nettoyage. Le maintien de ce site web se fera en interne par des membres de 
+l'équipe GitHub. Actuellement le site est en cours de conception, l'architecture logicielle est en cours de 
+maintien également.">
+</div>
+
+<title> Shine & Go : Ta voiture comme neuf</title>
+<div class="fichierStyleCSS">
+  
+<link rel="stylesheet" href="../fichierCSS/PriseRdv.css">
+
+<link rel="stylesheet" href="../fichierCSS/HeaderStyle.css">
+<link rel="stylesheet" href="../fichierCSS/BodyComponent.css">
+<link rel="stylesheet" href="../fichierCSS/footer.css">
+<link rel="stylesheet" href="../fichierCSS/Schedule.css">
+
+
+<link rel="stylesheet" href="../fichierCSS/Style_PagePrinci.css">
+
+</div>
+</head>
+
+
+<body>
+<header class="Menu_Déroulant"> 
+<div class="header-background">
+  
+  <a href="#" class="langueChoisi"> </a>
+  <a href="#" class="Link_Start_Nettoyage" > </a>   
+  <a href="../fichierHtlml/Directed_Link.html" class="Link_Start_Connexion" target="_blank"> </a>
+  <a href="#" class="Link_Start_aboutUs" >  </a>
+  <a href="#" class="Link_Start_Contact"> </a>
+  
+  <a href="#" class="Link_Presentation"> </a>
+ 
+  <form>
+    <input type="search" name="q" placeholder="Rechercher un service" class="research">
+    
+  </form>
+
+  </div>
+</header>
+
+
+<main>
+    <form id="reservationForm">
+        <div class="grid-container">
+            <!-- Services de lavage -->
+            <div class="step" id="step1">
+                <h2>Lavage Extérieur Complet</h2>
+                <label>
+                    <input type="radio" name="service" value="Optionnumero1" required>
+                    Lavage Extérieur Complet
+                </label>
+                <p>Un lavage manuel complet de la carrosserie, vitres et rétroviseurs.</p>
+            </div>
+
+            <div class="step" id="step2">
+                <h2>Nettoyage Intérieur Basique</h2>
+                <label>
+                    <input type="radio" name="interieur" value="Optionnumero2">
+                    Nettoyage Intérieur Basique
+                </label>
+                <p>Aspiration des sièges, tapis et nettoyage des surfaces.</p>
+            </div>
+
+            <div class="step" id="step3">
+                <h2>Nettoyage Intérieur Approfondi</h2>
+                <label>
+                    <input type="radio" name="interieur" value="Optionnumero3">
+                    Nettoyage Intérieur Approfondi
+                </label>
+                <p>Nettoyage en profondeur avec traitement antibactérien.</p>
+            </div>
+
+            <div class="step" id="step4">
+                <h2>Traitements Spécialisés</h2>
+                <label>
+                    <input type="checkbox" name="traitements" value="Optionnumero4">
+                    Traitements Spécialisés
+                </label>
+                <p>Traitement des cuirs, restauration de phares et hydrophobe.</p>
+            </div>
+
+            <div class="step" id="step5">
+                <h2>Décontamination et Désoxydation</h2>
+                <label>
+                    <input type="checkbox" name="decontamination" value="Optionnumero5">
+                    Décontamination et Désoxydation
+                </label>
+                <p>Polissage pour un rendu brillant en éliminant l'oxydation et les contaminants.</p>
+            </div>
+
+            <div class="step luxe" id="step6">
+                <h2>Détail de Luxe</h2>
+                <label>
+                    <input type="checkbox" name="deluxe" value="Optionnumero6">
+                    Détail de Luxe
+                </label>
+                <p>Service complet avec polish multi-étapes et soin des roues.</p>
+            </div>
+
+            <div class="step luxe" id="step7">
+                <h2>Entretien des Jantes et Pneus</h2>
+                <label>
+                    <input type="checkbox" name="jantes" value="Optionnumero7">
+                    Entretien des Jantes et Pneus
+                </label>
+                <p>Nettoyage approfondi des jantes et traitement des pneus.</p>
+            </div>
+
+            <div class="step luxe" id="step8">
+                <h2>Services Personnalisés</h2>
+                <label>
+                    <input type="checkbox" name="personnalise" value="Optionnumero8">
+                    Services Personnalisés
+                </label>
+                <p>Options personnalisées en fonction de vos besoins spécifiques.</p>
+            </div>
+        </div>
+        
+        <button type="submit">Réserver Maintenant</button>
+    </form>
+</main>
+
+<div class="fichierJavascript">
+
+<script src="../fichierJs/PriseRdv.js" defer> </script>
+
+<script src="../fichierJs/imageGestionnaire.js" defer> </script>
+<script src="../fichierJs/headerScriptGestionnaire.js" defer></script>
+
+<script src="../fichierJs/elementChoix.js" defer></script>
+<script src="../fichierJs/bodyComponent.js" defer></script>
+<script src="../fichierJs/footer.js" defer> </script>
+
+
+</div>
+</body>
+
+</html>

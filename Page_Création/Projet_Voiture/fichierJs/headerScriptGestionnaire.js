@@ -12,7 +12,7 @@ function ajouterTexte(elements) {
     // Utilisation de la fonction avec un dictionnaire
     const elementsAvecTextes = {
         ".Link_Start_Nettoyage": "Services",
-        ".Link_Start_Connexion": "Connexion",
+        ".Link_Start_Connexion": "Prise de Rendez-vous",
         ".Link_Start_aboutUs": "About us"
     };
     
