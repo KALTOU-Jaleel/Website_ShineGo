@@ -9,13 +9,7 @@ body {
     align-items: center;
 }
 
-header {
-    background-color: #b22222;
-    color: white;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-}
+
 
 main {
     padding: 20px;
@@ -33,7 +27,7 @@ main {
 }
 
 .step {
-    background-color: #bebebe;
+    background-color: #fefefe;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -55,10 +49,7 @@ label {
     margin: 5px 0;   /* Ajoute un petit espacement entre les sous-options */
 }
 
-p {
-    font-size: 0.9em;
-    color: #555;
-}
+
 
 button {
     background-color: #b22222;
