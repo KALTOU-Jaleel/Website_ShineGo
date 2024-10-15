@@ -9,4 +9,3 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Réservation soumise avec succès !");
     });
 });
-

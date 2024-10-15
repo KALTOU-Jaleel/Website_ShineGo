@@ -1,67 +1,25 @@
-.schedule {
-    margin: 20px auto;
-    max-width: 700px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
+/* styles.css */
+
+/* Style pour le tableau */
+table {
+    width: 96%; /* Prend 96% de la largeur de la page */
+    margin: 0 auto; /* Centre le tableau en appliquant une marge automatique */
+    border-collapse: collapse; /* Enlève l'espace entre les bordures des cellules */
 }
 
-.schedule h2 {
-    font-size: 28px;
-    color: #b30000; /* Rouge foncé pour le titre */
-    margin-bottom: 20px;
-    text-transform: uppercase;
+/* Suppression des bordures */
+th, td {
+    border: none; /* Pas de bordure pour les cellules */
+    padding: 8px; /* Espacement interne dans les cellules */
+    text-align: center; /* Centre le texte dans les cellules */
 }
 
-.schedule table {
-    width: 100%;
-    border-collapse: collapse;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    border-radius: 10px;
-    overflow: hidden;
+/* Style pour les cellules disponibles */
+.available {
+    background-color: #d4edda; /* Couleur de fond verte pour les créneaux disponibles */
 }
 
-.schedule th, .schedule td {
-    padding: 15px;
-    text-align: center;
-    font-size: 16px;
-    border: 1px solid #ddd;
+/* Effet au survol des lignes */
+tbody tr:hover td {
+    background-color: #f0f0f0; /* Change la couleur de fond lorsqu'on survole la ligne */
 }
-
-.schedule thead th {
-    background-color: #b30000; /* Rouge pour l'en-tête */
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.schedule tbody td {
-    background-color: #f9f9f9; /* Fond gris clair pour les cellules */
-}
-
-.schedule tbody tr:nth-child(even) td {
-    background-color: #f1f1f1; /* Alternance des couleurs pour les lignes paires */
-}
-
-.schedule .available {
-    background-color: #ff6666; /* Rouge clair pour les créneaux disponibles */
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.schedule .available:hover {
-    background-color: #b30000; /* Rouge foncé au survol */
-}
-
-.schedule td {
-    color: #333; /* Couleur du texte dans les cellules */
-}
-
-.schedule td:empty {
-    background-color: #fff; /* Fond blanc pour les cellules vides */
-}
-
-.schedule tbody td:hover {
-    background-color: #ffe6e6; /* Fond légèrement rouge pour les cellules survolées */
-}
-
