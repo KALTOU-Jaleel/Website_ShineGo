@@ -1,16 +1,17 @@
 // Validation du formulaire de connexion
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+function validerFormulaire() {
+    const nom = document.getElementById("nom").value;
+    const prenom = document.getElementById("prenom").value;
+    const adresse = document.getElementById("adresse").value;
+    const telephone = document.getElementById("telephone").value;
+    const description = document.getElementById("description").value;
 
-    // Validation basique pour s'assurer que les champs ne sont pas vides
-    if (!username || !password) {
-        alert("Veuillez remplir tous les champs.");
-        event.preventDefault(); // Empêche l'envoi du formulaire si les champs sont vides
+    if (nom && prenom && adresse && telephone && description) {
+        alert("Formulaire validé avec succès !");
+        // Ici, vous pouvez ajouter du code pour envoyer les données à un serveur
     } else {
-        // Tu peux ajouter des validations supplémentaires ici
-        console.log("Formulaire valide. Envoi des données...");
+        alert("Veuillez remplir tous les champs.");
     }
-});
+}
 
 

@@ -21,6 +21,8 @@ maintien également.">
 
 <link rel="stylesheet" href="../fichierCSS/PriseRdv.css">
 <link rel="stylesheet" href="../fichierCSS/footer.css">
+<link rel="stylesheet" href="../fichierCSS/ConnexionPopup.css">
+
 <link rel="stylesheet" href="../fichierCSS/Style_PagePrinci.css">
 
 <link rel="stylesheet" href="../fichierCSS/Schedule.css">
@@ -304,7 +306,27 @@ maintien également.">
   </div>
 
 
+  <div class="form-container">
+    <h2>Formulaire de Contact</h2>
+    <form id="contactForm">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
 
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" name="adresse" required>
+
+        <label for="telephone">Numéro de Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required>
+
+        <label for="description">Description :</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <button type="button" onclick="validerFormulaire()">Valider</button>
+    </form>
+</div>
 
 
 <div class="fichierJavascript">
