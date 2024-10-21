@@ -19,13 +19,13 @@ maintien également.">
 <link rel="stylesheet" href="../fichierCSS/HeaderStyle.css">
 
 
-<link rel="stylesheet" href="../fichierCSS/PriseRdv.css">
+
 <link rel="stylesheet" href="../fichierCSS/footer.css">
-<link rel="stylesheet" href="../fichierCSS/ConnexionPopup.css">
+
 
 <link rel="stylesheet" href="../fichierCSS/Style_PagePrinci.css">
 
-<link rel="stylesheet" href="../fichierCSS/Schedule.css">
+
 
 
 
@@ -35,6 +35,12 @@ maintien également.">
 
 
 <body>
+<!--  
+<iframe src="../fichierHtlml/Header.html" style="width: 100%; height: 500px; border: none;"> </iframe>
+
+
+-->
+
 <header class="Menu_Déroulant"> 
 <div class="header-background">
   
@@ -55,295 +61,23 @@ maintien également.">
 </header>
 
 
-<main>
-    <form id="reservationForm">
-        <div class="grid-container">
-            <!-- Proposition principale 1 : Lavage Extérieur Complet -->
-            <div class="step" id="step1">
-                <h2>Lavage Extérieur Complet</h2>
-                <label>
-                    <input type="checkbox" name="service" value="Option1">
-                    Lavage Extérieur Complet :
-                </label>
-                <p>Un lavage manuel complet de la carrosserie, vitre et rétroviseur.</p>
-                <!-- Sous-options -->
-                <label>
-                    <input type="checkbox" name="option1_sous1" value="Option1Sous1">
-                    Cire protectrice
-                </label>
-                <label>
-                    <input type="checkbox" name="option1_sous2" value="Option1Sous2">
-                    Traitement hydrophobe
-                </label>
-                <label>
-                    <input type="checkbox" name="option1_sous3" value="Option1Sous3">
-                    Nettoyage des jantes
-                </label>
-                <label>
-                    <input type="checkbox" name="option1_sous4" value="Option1Sous4">
-                    Polissage des rétroviseurs
-                </label>
-                <label>
-                    <input type="checkbox" name="option1_sous5" value="Option1Sous5">
-                    Nettoyage des phares
-                </label>
-                <label>
-                    <input type="checkbox" name="option1_sous6" value="Option1Sous6">
-                    Rinçage à haute pression
-                </label>
-                <label>
-                    <input type="checkbox" name="option1_sous7" value="Option1Sous7">
-                    Dégraissage des pneus
-                </label>
-                <label>
-                    <input type="checkbox" name="option1_sous8" value="Option1Sous8">
-                    Nettoyage des seuils de porte
-                </label>
-                <label>
-                    <input type="checkbox" name="option1_sous9" value="Option1Sous9">
-                    Nettoyage des essuie-glaces
-                </label>
-                <label>
-                    <input type="checkbox" name="option1_sous10" value="Option1Sous10">
-                    Traitement anti-rayures
-                </label>
-            </div>
 
-            <!-- Proposition principale 2 : Nettoyage Intérieur Approfondi -->
-            <div class="step" id="step2">
-                <h2>Nettoyage Intérieur Approfondi</h2>
-                <label>
-                    <input type="checkbox" name="service" value="Option2">
-                    Nettoyage Intérieur Approfondi
-                </label>
-                <p>Aspiration des sièges, tapis et surfaces, traitement antibactérien.</p>
-                <!-- Sous-options -->
-                <label>
-                    <input type="checkbox" name="option2_sous1" value="Option2Sous1">
-                    Traitement des cuirs
-                </label>
-                <label>
-                    <input type="checkbox" name="option2_sous2" value="Option2Sous2">
-                    Désinfection approfondie
-                </label>
-                <label>
-                    <input type="checkbox" name="option2_sous3" value="Option2Sous3">
-                    Nettoyage des tapis de sol
-                </label>
-                <label>
-                    <input type="checkbox" name="option2_sous4" value="Option2Sous4">
-                    Désodorisation de l’habitacle
-                </label>
-                <label>
-                    <input type="checkbox" name="option2_sous5" value="Option2Sous5">
-                    Nettoyage des vitres intérieures
-                </label>
-                <label>
-                    <input type="checkbox" name="option2_sous6" value="Option2Sous6">
-                    Traitement anti-acariens
-                </label>
-                <label>
-                    <input type="checkbox" name="option2_sous7" value="Option2Sous7">
-                    Nettoyage du tableau de bord
-                </label>
-                <label>
-                    <input type="checkbox" name="option2_sous8" value="Option2Sous8">
-                    Nettoyage des conduits de ventilation
-                </label>
-                <label>
-                    <input type="checkbox" name="option2_sous9" value="Option2Sous9">
-                    Nettoyage des ceintures de sécurité
-                </label>
-                <label>
-                    <input type="checkbox" name="option2_sous10" value="Option2Sous10">
-                    Aspirateur haute puissance
-                </label>
-            </div>
+<iframe src="../fichierHtlml/ChoixElement.html" style="width: 100%; height: 500px; border: none;"> </iframe>
 
-            <!-- Proposition principale 3 : Détail de Luxe -->
-            <div class="step luxe" id="step3">
-                <h2>Détail de Luxe</h2>
-                <label>
-                    <input type="checkbox" name="service" value="Option3">
-                    Détail de Luxe
-                </label>
-                <p>Service complet avec polish multi-étapes et soin des roues.</p>
-                <!-- Sous-options -->
-                <label>
-                    <input type="checkbox" name="option3_sous1" value="Option3Sous1">
-                    Soin des jantes
-                </label>
-                <label>
-                    <input type="checkbox" name="option3_sous2" value="Option3Sous2">
-                    Restauration des phares
-                </label>
-                <label>
-                    <input type="checkbox" name="option3_sous3" value="Option3Sous3">
-                    Soin des pneus
-                </label>
-                <label>
-                    <input type="checkbox" name="option3_sous4" value="Option3Sous4">
-                    Polish carrosserie multi-étapes
-                </label>
-                <label>
-                    <input type="checkbox" name="option3_sous5" value="Option3Sous5">
-                    Traitement céramique
-                </label>
-                <label>
-                    <input type="checkbox" name="option3_sous6" value="Option3Sous6">
-                    Nettoyage du moteur
-                </label>
-                <label>
-                    <input type="checkbox" name="option3_sous7" value="Option3Sous7">
-                    Soin complet des chromes
-                </label>
-                <label>
-                    <input type="checkbox" name="option3_sous8" value="Option3Sous8">
-                    Traitement des rayures profondes
-                </label>
-                <label>
-                    <input type="checkbox" name="option3_sous9" value="Option3Sous9">
-                    Restauration des éléments plastiques
-                </label>
-                <label>
-                    <input type="checkbox" name="option3_sous10" value="Option3Sous10">
-                    Nettoyage en profondeur des garnitures
-                </label>
-            </div>
-        </div>
+<iframe src="../fichierHtlml/Schedule.html" style="width: 100%; height: 500px; border: none;"> </iframe>
 
-        <button type="submit">Réserver Maintenant</button>
-    </form>
-</main>
-
-
-<div class="schedule">
-<div class=""></div>"
-    <h2>Disponibilités</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Heure</th>
-          <th>Lundi</th>
-          <th>Mardi</th>
-          <th>Mercredi</th>
-          <th>Jeudi</th>
-          <th>Vendredi</th>
-        </tr>
-        
-      </thead>
-      <tbody>
-        <tr>
-          <td>08:00 - 09:00</td>
-          <td class="available">Disponible</td>
-          <td></td>
-          <td class="available">Disponible</td>
-          <td></td>
-          <td class="available">Disponible</td>
-        </tr>
-        <tr>
-          <td>09:00 - 10:00</td>
-          <td class="available">Disponible</td>
-          <td></td>
-          <td class="available">Disponible</td>
-          <td></td>
-          <td class="available">Disponible</td>
-        </tr>
-        <tr>
-          <td>10:00 - 11:00</td>
-          <td></td>
-          <td class="available">Disponible</td>
-          <td></td>
-          <td class="available">Disponible</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>11:00 - 12:00</td>
-          <td class="available">Disponible</td>
-          <td></td>
-          <td class="available">Disponible</td>
-          <td></td>
-          <td></td>
-        </tr>
-        
-        <tr>
-          <td>14:00 - 15:00</td>
-          <td class="available">Disponible</td>
-          <td></td>
-          <td class="available">Disponible</td>
-          <td></td>
-          <td></td>
-        </tr>
-
-        <tr>
-          <td>15:00 - 16:00</td>
-          <td class="available">Disponible</td>
-          <td class="available">Disponible</td>
-          <td class="available">Disponible</td>
-          <td class="available">Disponible</td>
-          <td class="available">Disponible</td>
-        </tr>
-
-        <tr>
-          <td>16:00 - 17:00</td>
-          <td class="available">Disponible</td>
-          <td></td>
-          <td class="available">Disponible</td>
-          <td></td>
-          <td></td>
-        </tr>
-
-        <tr>
-          <td>17:00 - 18:00</td>
-          <td class="available">Disponible</td>
-          <td class="available">Disponible</td>
-          <td class="available">Disponible</td>
-          <td class="available">Disponible</td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-
-  <div class="form-container">
-    <h2>Formulaire de Contact</h2>
-    <form id="contactForm">
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required>
-
-        <label for="prenom">Prénom :</label>
-        <input type="text" id="prenom" name="prenom" required>
-
-        <label for="adresse">Adresse :</label>
-        <input type="text" id="adresse" name="adresse" required>
-
-        <label for="telephone">Numéro de Téléphone :</label>
-        <input type="tel" id="telephone" name="telephone" required>
-
-        <label for="description">Description :</label>
-        <textarea id="description" name="description" rows="4" required></textarea>
-
-        <button type="button" onclick="validerFormulaire()">Valider</button>
-    </form>
-</div>
+<iframe src="../fichierHtlml/VosContacts.html" style="width: 100%; height: 500px; border: none;"> </iframe>
 
 
 <div class="fichierJavascript">
 
-<script src="../fichierJs/PriseRdv.js" defer> </script>
-
-<script src="../fichierJs/imageGestionnaire.js" defer> </script>
 <script src="../fichierJs/headerScriptGestionnaire.js" defer></script>
 
-<script src="../fichierJs/elementChoix.js" defer></script>
-<script src="../fichierJs/bodyComponent.js" defer></script>
 <script src="../fichierJs/footer.js" defer> </script>
 
-
-
-
 </div>
+
+
 </body>
 
 </html>
