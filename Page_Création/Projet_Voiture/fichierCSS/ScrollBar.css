@@ -1,0 +1,36 @@
+.scrollable-container {
+    width: 300px;
+    height: 200px;
+    overflow-y: hidden; /* Masquer la barre de défilement par défaut */
+    border: 2px solid #333;
+    padding: 10px;
+    position: relative;
+}
+
+.scrollable-content {
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Masque la barre sur Firefox */
+}
+
+.scrollable-content::-webkit-scrollbar {
+    display: none; /* Masque la barre sur les navigateurs WebKit */
+}
+
+.show-scrollbar .scrollable-content {
+    overflow-y: scroll;
+}
+
+.scrollable-container:hover .scrollable-content::-webkit-scrollbar {
+    display: block; /* Affiche la barre au survol */
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background-color: #ff4757;
+    border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+    background-color: #f4f4f9;
+}
+
