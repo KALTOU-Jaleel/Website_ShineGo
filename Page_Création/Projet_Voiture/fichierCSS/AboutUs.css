@@ -1,0 +1,37 @@
+.a-propos {
+    background-color: #edebeb; /* Rouge très clair pour l'arrière-plan */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #000000; /* Rouge foncé pour le texte */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.DescriptionEntreprise {
+    color: #cc0000; /* Titre en rouge vif */
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.a-propos p {
+    margin: 10px 0;
+}
+
+.a-propos strong {
+    color: #f2b500; /* Rouge foncé pour les textes en gras */
+    font-weight: bold;
+}
+
+.a-propos p:first-of-type {
+    font-size: 1.2rem; /* Légèrement plus grand pour la première phrase */
+}
+
+a-propos p:hover {
+    border-left: 5px solid #ff9999; /* Bordure rouge clair lors du survol */
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
