@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #ffffff;
 }
 
 /* Header */
@@ -46,7 +46,7 @@ h2 {
 }
 
 .contact-item {
-    background-color: #ffe5e5;
+    background-color: #000000;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
