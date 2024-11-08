@@ -1,10 +1,10 @@
 /* Style global de la page */
 body {
     font-family: 'Poppins', sans-serif; /* Police moderne */
-    background-color: #f4f4f9; /* Arrière-plan clair et doux */
+    background-color: #ffffff; /* Arrière-plan clair et doux */
     margin: 0;
     padding: 0;
-    color: #333; /* Couleur principale du texte */
+    color: #ff6767; /* Couleur principale du texte */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@ body {
 
 /* Section principale */
 .a-propos {
-    background-color: #ffffff; /* Fond blanc pour la section */
+    background-color: #000000; /* Fond blanc pour la section */
     padding: 40px;
     margin: 20px;
     border-radius: 15px; /* Coins arrondis */
@@ -22,7 +22,7 @@ body {
     max-width: 900px;
     width: 90%; /* Responsive */
     line-height: 1.7;
-    color: #555; /* Texte légèrement assombri */
+    color: #efeeee; /* Texte légèrement assombri */
 }
 
 /* Titre */
@@ -39,7 +39,7 @@ body {
     font-size: 1.1rem;
     margin-bottom: 20px;
     line-height: 1.8;
-    color: #555;
+    color: #f3f3f3;
 }
 
 /* Texte en gras */
