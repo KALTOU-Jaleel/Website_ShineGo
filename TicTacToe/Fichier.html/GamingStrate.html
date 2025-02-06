@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page principale du jeu Tic tac toe</title>
+
+    <link rel="stylesheet" href="../Fichier.css/GamingStrate.css">
+    
+</head>
+<body>
+<header class="Menu"> 
+
+ <iframe src="../Fichier.html/StartGame.html" class= "StartTheGame" > </iframe>
+
+    <div class="ButtonCroixRond">
+        <button class="ButtonCroix" onclick="chooseSymbol('X')" id="chooseX">X</button>
+        <button class="ButtonRond" onclick="chooseSymbol('O')" id="chooseO">O</button>
+    </div>
+
+</header>
+
+<div class="tic-tac-toe">
+    <div class="cell" onclick="addSymbol(0)" data-index="0"></div>
+    <div class="cell" onclick="addSymbol(1)" data-index="1"></div>
+    <div class="cell" onclick="addSymbol(2)" data-index="2"></div>
+    <div class="cell" onclick="addSymbol(3)" data-index="3"></div>
+    <div class="cell" onclick="addSymbol(4)" data-index="4"></div>
+    <div class="cell" onclick="addSymbol(5)" data-index="5"></div>
+    <div class="cell" onclick="addSymbol(6)" data-index="6"></div>
+    <div class="cell" onclick="addSymbol(7)" data-index="7"></div>
+    <div class="cell" onclick="addSymbol(8)" data-index="8"></div>
+</div>
+
+    <div class="winner-section">
+        <textarea readonly class="ChampResultat">Bonne partie...</textarea>
+    </div>
+
+
+<footer> 
+<div class="CopyRight">  </div>
+
+</footer>
+<div class="scriptJs"> 
+<script src="../Fichier.js/GamingStrate.js"></script>
+
+</div>
+</body>
+
+</html>

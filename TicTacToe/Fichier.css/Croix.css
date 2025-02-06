@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.cross {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: white;
+    transition: background-color 0.3s; /* Ajoute une transition pour un effet fluide */
+}
+
+.cross::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 100px;
+    height: 20px;
+    background-color: white;
+    transition: background-color 0.3s; /* Transition pour le pseudo-élément */
+}
+
+.cross:hover, 
+.cross:hover::before {
+    background-color: gray;
+}

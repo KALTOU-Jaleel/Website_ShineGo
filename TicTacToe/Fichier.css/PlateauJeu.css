@@ -1,0 +1,35 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+
+.cell {
+    width: 100px; 
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 1px solid rgb(255, 255, 255);
+    overflow: hidden; 
+    box-sizing: border-box;
+}
+
+.cell:hover {
+    background-color: gray;
+}

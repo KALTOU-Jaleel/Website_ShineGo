@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+.start-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.start-button:active {
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
