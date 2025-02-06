@@ -6,7 +6,7 @@ Ce projet est un jeu de Tic-Tac-Toe jouable directement dans un navigateur web.
 ![Début de partie](./Images/Capture%20d’écran%202025-02-05%20065421.png)
 
 Les joueurs peuvent choisir X ou O à chaque tour et jouer en alternance jusqu'à ce qu'un gagnant soit déterminé ou qu'une égalité soit déclarée.
-![Partie en cours](./Images/Capture%20d’écran%202025-02-05%20101240.png)
+
 
 
 Ayez du fun avec mon petit jeu
@@ -22,7 +22,6 @@ Ayez du fun avec mon petit jeu
 
 - Redémarrage automatique à la fin d'une partie
 
-- Interface avec des boutons interactifs et un affichage du résultat
 
 ## Technologies utilisées
 
@@ -39,6 +38,8 @@ Ayez du fun avec mon petit jeu
 - Cliquez sur une case vide du plateau pour y placer votre symbole.
 
 - Le jeu alterne les tours automatiquement après chaque coup.
+
+![Partie en cours d'exécution](./Images/Capture%20d’écran%202025-02-05%20101240.png)
 
 La partie se termine lorsqu'un joueur aligne trois symboles ou si toutes les cases sont remplies sans gagnant.
 
