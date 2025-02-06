@@ -46,7 +46,7 @@ La partie se termine lorsqu'un joueur aligne trois symboles ou si toutes les cas
 
 ## Installation et exécution
 
-Aucune installation requise. Il suffit d'ouvrir le fichier GamingStrate.html dans un navigateur web pour jouer.
+Aucune installation requise. Il suffit d'ouvrir le fichier GamingStrate.html situé dans le dosier Html dans un navigateur web pour jouer.
 
 ## Améliorations possibles
 
@@ -58,4 +58,4 @@ Aucune installation requise. Il suffit d'ouvrir le fichier GamingStrate.html dan
 
 ## Auteur
 
-Développé par Jaleel.
+Développé par KALTOU Jaleel.
